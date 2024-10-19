@@ -1,0 +1,5 @@
+Flask
+Flask-Login
+pymongo
+flask-mail
+itsdangerous

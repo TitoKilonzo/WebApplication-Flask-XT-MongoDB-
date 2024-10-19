@@ -1,0 +1,20 @@
+<!-- templates/search_results.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results</title>
+</head>
+<body>
+    <h1>Search Results</h1>
+    {% if contact %}
+        <h2>Contact Details</h2>
+        <p>Mobile: {{ contact.mobile }}</p>
+        <p>Email: {{ contact.email }}</p>
+        <p>Address: {{ contact.address }}</p>
+        <p>Registration Number: {{ contact.registration_number }}</p>
+    {% else %}
+        <p>No contact found with the given registration number.</p>
+    {% endif %}
+    <p>
